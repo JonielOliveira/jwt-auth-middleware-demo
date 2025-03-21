@@ -19,6 +19,8 @@
 ## :scroll: Descrição
 Este repositório contém um exemplo simples de autenticação e autorização com **JWT (JSON Web Token)**, utilizando **Express.js**. O projeto demonstra como criar middlewares para validar o token de um usuário com base no `userId` e `role`.
 
+:link: [(Voltar ao topo)](#bookmark_tabs-índice)
+
 ---
 
 ## :heavy_plus_sign: Pré-requisitos
@@ -29,6 +31,8 @@ Antes de rodar o projeto, você precisará ter o **Node.js** e o **npm** instala
 1. Acesse o site oficial do [Node.js](https://nodejs.org/).
 2. Baixe a versão recomendada para a maioria dos usuários (LTS).
 3. Siga o processo de instalação no seu sistema operacional.
+
+:link: [(Voltar ao topo)](#bookmark_tabs-índice)
 
 ---
 
@@ -63,6 +67,8 @@ Com as dependências instaladas e o arquivo `.env` configurado, você pode rodar
 npm start
 ```
 Isso iniciará o servidor na porta especificada no `.env` (por padrão, será a porta 3000). O servidor irá escutar requisições na URL (http://localhost:3000).
+
+:link: [(Voltar ao topo)](#bookmark_tabs-índice)
 
 ---
 
@@ -129,6 +135,8 @@ Se o `role` for `admin` e o `userId` na rota corresponder ao `userId` do token, 
 }
 ```
 
+:link: [(Voltar ao topo)](#bookmark_tabs-índice)
+
 ---
 
 ## :building_construction: Estrutura do projeto
@@ -143,3 +151,5 @@ Se o `role` for `admin` e o `userId` na rota corresponder ao `userId` do token, 
 - `.gitignore`: Arquivo que define quais arquivos ou pastas devem ser ignorados pelo **Git**.
 - `LICENSE`: Arquivo de licença do projeto.
 - `README.md`: Documento com instruções sobre instalação, configuração e uso do projeto.
+
+:link: [(Voltar ao topo)](#bookmark_tabs-índice)
