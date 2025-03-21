@@ -50,7 +50,23 @@ Instale as dependências do projeto utilizando o `npm`:
 npm install
 ```
 
-#### [3] Configurar variáveis de ambiente
+#### [3] Criando a chave secreta JWT
+A chave secreta é um valor **aleatório e seguro**, usado para **assinar** e **validar** os tokens **JWT**.
+
+Você pode gerar uma chave secreta de forma segura usando o terminal com `OpenSSL`:
+```
+openssl rand -base64 32
+```
+Isso gera um valor como (exemplo):
+```
+c3VwZXJzZWNyZXRrZXluZWVkZWQxMjM=
+```
+Agora, você define essa chave no arquivo `.env` no backend:
+```
+JWT_SECRET=c3VwZXJzZWNyZXRrZXluZWVkZWQxMjM=
+```
+
+#### [4] Configurar variáveis de ambiente
 Crie uma cópia do arquivo `.env.example` e renomeie para `.env`:
 ```
 cp .env.example .env
@@ -61,7 +77,7 @@ PORT=3050
 JWT_SECRET=sua-chave-secreta-aqui
 ```
 
-#### [4] Rodar o projeto
+#### [5] Rodar o projeto
 Com as dependências instaladas e o arquivo `.env` configurado, você pode rodar o servidor com o seguinte comando:
 ```
 npm start
